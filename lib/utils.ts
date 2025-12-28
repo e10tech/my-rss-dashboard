@@ -16,6 +16,12 @@ export const getSourceStyle = (sourceName: string) => {
       background: "linear-gradient(135deg, #24292e, #6e7681)",
       icon: "GH",
     };
+  } else if (name.includes("visual studio")) {
+    // ▼▼▼ VS Code用に追加 (公式カラー #007ACC をベースにしたグラデーション) ▼▼▼
+        return {
+      background: "linear-gradient(135deg, #007ACC, #005A9E)", 
+      icon: "VS",
+    };
   } else if (name.includes("zenn")) {
     return {
       background: "linear-gradient(135deg, #3ea8ff, #007bb6)",

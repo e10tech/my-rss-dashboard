@@ -60,11 +60,12 @@ export default function Home() {
     if (name.includes('google')) return 1;
     if (name.includes('openai')) return 2;
     if (name.includes('github')) return 3;
-    if (name === 'zenn trends') return 4;
-    if (name === 'zenn (copilot)') return 5;
-    if (name === 'qiita trends') return 6;
-    if (name === 'qiita (copilot)') return 7;
-    return 8;
+    if (name.includes('visual studio')) return 4;
+    if (name === 'zenn trends') return 5;
+    if (name === 'zenn (copilot)') return 6;
+    if (name === 'qiita trends') return 7;
+    if (name === 'qiita (copilot)') return 8;
+    return 9;
   };
 
   // ▼ 日付判定ロジック
